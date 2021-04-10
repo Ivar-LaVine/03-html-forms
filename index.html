@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--                            -->
+<!--    Ilya Plotnikov 3-IS-1-->
+<!--                            -->
+    <title>HTML 5 FORMS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form class="mySection">
+        <header class="myHeader" >опрос студентов</header>
+        <div class="flex-container">
+            <div class="flex-item">
+                <div class="div" style="width: 100%">
+                    <header class="flex-header">Анкетные данные</header>
+                </div>
+                <h4>Введите ФИО</h4><input type="text">
+                <h4>Введите пароль</h4><input type="password">
+                <h4>Введите E-Mail</h4><input type="email">
+            </div>
+            <div class="flex-item">
+                <header class="flex-header">Специализация</header>
+                <div class="flex-subtitle">Выберите свою специальность:</div>
+                <input type="radio" name="radio-box" checked><h5>Программирование в компьютерных системах</h5>
+                <input type="radio" name="radio-box"><h5>Компьютерные сети</h5>
+            </div>
+            <div class="flex-item">
+                <header class="flex-header">Языки программирования</header>
+                <div class="flex-subtitle">Выберите языки программирования которые вы бы хотели изучить:</div>
+                <input type="checkbox"><h4>PHP</h4>
+                <input type="checkbox"><h4>JavaScript</h4>
+                <input type="checkbox"><h4>SQL</h4>
+                <div class="flex-subtitle">Укажите уровень освоения языков:</div>
+                <select name="lang-level" id="lang-level">
+                    <option value="" style="background-color: gray">Начальный</option>
+                    <optgroup label="Базовый" style="background-color: deepskyblue"></optgroup>
+                    <option value="" style="background-color: darkgray">25%</option>
+                    <option value="" style="background-color: lightgray">50%</option>
+                    <optgroup label="Профессиональный" style="background-color: dodgerblue"></optgroup>
+                    <option value="" style="background-color: lightgray">75%</option>
+                    <option value="">100%</option>
+                </select>
+            </div>
+            <div class="flex-item">
+                <header class="flex-header">Уровень освоения</header>
+                <div class="flex-subtitle">Выберите освоенные функции языков(множественный выбор):</div>
+                <select name="knowledge-level" id="knowledge-level" multiple>
+                    <option value="" class="myOption">Типы данных</option>
+                    <option value="">Ветвление</option>
+                    <option value="">Циклы</option>
+                    <option value="">Массивы</option>
+                    <option value="">Строки</option>
+                    <option value="">Файлы</option>
+                </select>
+            </div>
+            <div class="flex-footer" style="width: 100% !important; margin-top: 20px; border: 1px solid black">
+                <header class="flex-header">Обратная связь</header>
+                <div class="flex-subtitle">Введите свои пожелания по изучению языков программирования:</div>
+                <textarea name="myTextArea" id="myTextArea" style="width: 100%; resize: none" rows="6"></textarea>
+                <h4>Загрузите свою фотографию: <input type="file"></h4>
+            </div>
+        </div>
+        <footer>
+            <input type="reset">
+            <input type="submit" value="Отправить">
+        </footer>
+    </form>
+</body>
+</html>
